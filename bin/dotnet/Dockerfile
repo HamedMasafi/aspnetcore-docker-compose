@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:2.1-sdk
+FROM microsoft/dotnet:latest
 # RUN mkdir -p /app
 # WORKDIR /app
 # RUN ["dotnet", "restore"]
