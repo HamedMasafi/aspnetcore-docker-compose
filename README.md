@@ -22,7 +22,8 @@ Edit your site placed into ./app directory
 
 ```
 docker-compose build
-docker-compose up -d
+docker-compose up -d &
+./run
 ```
 
 Visit http://127.0.0.1:5000 
