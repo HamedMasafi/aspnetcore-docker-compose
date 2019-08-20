@@ -12,9 +12,7 @@ services:
             - db
         volumes:
             - ./app:/app
-        #command: "dotnet run"
-        #entrypoint: dotnet run
-        #entrypoint: "dotnet watch run --urls http://0.0.0.0:5000"
+        entrypoint: "dotnet watch run --urls http://0.0.0.0:5000"
 
 
     db:
