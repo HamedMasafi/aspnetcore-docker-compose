@@ -14,13 +14,15 @@ services:
             - ./app:/app
         #command: "dotnet run"
         #entrypoint: dotnet run
-        entrypoint: "dotnet watch run --urls http://0.0.0.0:5000"
+        #entrypoint: "dotnet watch run --urls http://0.0.0.0:5000"
 
 
     db:
         container_name: 'db'
         restart: 'always'
         image: "mcr.microsoft.com/mssql/server"
+        volumes:
+            - ./data:/var/opt/mssql/data/
         environment:
-            SA_PASSWORD: "123456"
+            SA_PASSWORD: "sap123456"
             ACCEPT_EULA: "Y" 

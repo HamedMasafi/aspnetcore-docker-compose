@@ -1,0 +1,5 @@
+#!/bin/bash
+
+source env.sh
+path="${APP_DIR/.\//${PWD}\/}"
+docker run -v $path:/app --workdir /app microsoft/dotnet dotnet new $@
