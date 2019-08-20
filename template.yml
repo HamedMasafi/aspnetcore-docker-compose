@@ -21,6 +21,8 @@ services:
         container_name: 'db'
         restart: 'always'
         image: "mcr.microsoft.com/mssql/server"
+        volumes:
+            - ${DATA_DIR}:/var/opt/mssql/data/
         environment:
             SA_PASSWORD: "${SA_PASSWORD}"
             ACCEPT_EULA: "Y" 
