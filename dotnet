@@ -1,0 +1,6 @@
+#!/bin/bash
+
+docker run -v ${PWD}/app:/app --workdir /app microsoft/dotnet:2.1-sdk dotnet $@
+#new mvc --auth Individual
+ 
+

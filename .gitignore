@@ -1,0 +1,11 @@
+app/app*
+app/Areas
+app/Controllers
+app/Data
+app/Models
+app/obj
+app/*.cs
+app/Properties
+app/Views
+app/wwwroot
+ 
