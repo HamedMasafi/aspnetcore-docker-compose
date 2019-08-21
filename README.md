@@ -3,10 +3,18 @@
 ## Usage
 Change variables values in env.sh file (if needed)
 
+| Variable name   | Descript                          | Default value |
+|-----------------|-----------------------------------|---------------|
+| PORT            | Port of webserver                 |            80 |
+| APP_DIR=./app   | Directory for website             |         ./app |
+| SA_PASSWORD     | Password for sql server sa        |     sap123456 |
+| DATA_DIR=./data | Directory path for database files |        ./data |
+
+
 ### Create new docker-compose file
 Run this script:
 ```
-./create
+./init
 ```
 
 After this file docker-compose.yml will be created (or updated)
